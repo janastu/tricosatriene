@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+cat > config.json << END
+{
+	"host": "mongo",
+	"port": 27017,
+	"database": "tricos",
+	"sort_keys": true,
+	"compact_json": false,
+	"indent_json": true,
+	"url_host": "https://$VIRTUAL_HOST",
+	"url_prefix": "annotations/",
+	"json_ld": true
+}
+END

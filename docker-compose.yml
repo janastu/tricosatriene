@@ -1,0 +1,15 @@
+version: "2"
+
+volumes:
+  mongo_db: {}
+
+services:
+  mongo:
+    image: mongo
+    volumes:
+      - mongo_db:/data/db
+    
+  tricos:
+    build: .
+    links:
+      - mongo

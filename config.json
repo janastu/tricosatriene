@@ -1,0 +1,11 @@
+{
+	"host": "localhost",
+	"port": 27017,
+	"database": "tricos",
+	"sort_keys": true,
+	"compact_json": false,
+	"indent_json": true,
+	"url_host": "http://localhost",
+	"url_prefix": "annotations/",
+	"json_ld": true
+}
